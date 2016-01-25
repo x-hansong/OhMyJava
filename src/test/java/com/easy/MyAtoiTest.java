@@ -19,8 +19,6 @@ public class MyAtoiTest {
         logger.debug(String.valueOf(myAtoi.myAtoi("+-2")));
         logger.debug(String.valueOf(myAtoi.myAtoi("  -0012a42")));
         logger.debug(String.valueOf(myAtoi.myAtoi("-2147483648")));
-        logger.debug(String.valueOf(Integer.parseInt("-2147483648")));
-        logger.debug(String.valueOf(Integer.parseInt("2147483648")));
         logger.debug(String.valueOf(myAtoi.myAtoi("2147483648")));
     }
 }
