@@ -5,6 +5,7 @@ import com.easy.happynumber.HappyNumber;
 import com.easy.myatoi.MyAtoi;
 import com.easy.palindromenumber.PalindromeNumber;
 import com.easy.reverseinteger.ReverseInteger;
+import com.easy.titletonumber.TitleToNumber;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -52,10 +53,17 @@ public class EasyTest {
         logger.debug(String.valueOf(happyNumber.isHappy(199)));
     }
 
-    @Test
+//    @Test
     public void testAddBinary(){
         AddBinary addBinary = new AddBinary();
         logger.debug(addBinary.addBinary("1111", "1111"));
         logger.debug(addBinary.addBinary("11100111", "110101"));
     }
+
+    @Test
+    public  void testTitleToNumber(){
+        TitleToNumber titleToNumber = new TitleToNumber();
+        logger.debug(String.valueOf(titleToNumber.titleToNumber("AB")));
+    }
+
 }
