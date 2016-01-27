@@ -1,6 +1,7 @@
 package com.easy;
 
-import com.easy.HappyNumber.HappyNumber;
+import com.easy.addbinary.AddBinary;
+import com.easy.happynumber.HappyNumber;
 import com.easy.myatoi.MyAtoi;
 import com.easy.palindromenumber.PalindromeNumber;
 import com.easy.reverseinteger.ReverseInteger;
@@ -43,11 +44,18 @@ public class EasyTest {
         logger.debug(String.valueOf(palindromeNumber.isPalindrome(1024000003)));
     }
 
-    @Test
+//    @Test
     public void testHappyNumber(){
         HappyNumber happyNumber = new HappyNumber();
         logger.debug(String.valueOf(happyNumber.isHappy(19)));
         logger.debug(String.valueOf(happyNumber.isHappy(9)));
         logger.debug(String.valueOf(happyNumber.isHappy(199)));
+    }
+
+    @Test
+    public void testAddBinary(){
+        AddBinary addBinary = new AddBinary();
+        logger.debug(addBinary.addBinary("1111", "1111"));
+        logger.debug(addBinary.addBinary("11100111", "110101"));
     }
 }

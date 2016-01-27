@@ -1,4 +1,4 @@
-package com.easy.HappyNumber;
+package com.easy.happynumber;
 
 /**
  * Created by xhans on 2016/1/26.
