@@ -6,6 +6,7 @@ import com.easy.myatoi.MyAtoi;
 import com.easy.palindromenumber.PalindromeNumber;
 import com.easy.reverseinteger.ReverseInteger;
 import com.easy.titletonumber.TitleToNumber;
+import com.easy.uglynumber.UglyNumber;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -60,10 +61,18 @@ public class EasyTest {
         logger.debug(addBinary.addBinary("11100111", "110101"));
     }
 
-    @Test
+//    @Test
     public  void testTitleToNumber(){
         TitleToNumber titleToNumber = new TitleToNumber();
         logger.debug(String.valueOf(titleToNumber.titleToNumber("AB")));
     }
+
+    @Test
+    public void testUglyNumber(){
+        UglyNumber uglyNumber = new UglyNumber();
+        logger.debug(String.valueOf(uglyNumber.isUgly(19)));
+        logger.debug(String.valueOf(uglyNumber.isUgly(9)));
+    }
+
 
 }
