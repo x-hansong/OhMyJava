@@ -4,6 +4,7 @@ import com.easy.addbinary.AddBinary;
 import com.easy.happynumber.HappyNumber;
 import com.easy.myatoi.MyAtoi;
 import com.easy.palindromenumber.PalindromeNumber;
+import com.easy.plusone.PlusOne;
 import com.easy.reverseinteger.ReverseInteger;
 import com.easy.titletonumber.TitleToNumber;
 import com.easy.uglynumber.UglyNumber;
@@ -67,12 +68,18 @@ public class EasyTest {
         logger.debug(String.valueOf(titleToNumber.titleToNumber("AB")));
     }
 
-    @Test
+//    @Test
     public void testUglyNumber(){
         UglyNumber uglyNumber = new UglyNumber();
         logger.debug(String.valueOf(uglyNumber.isUgly(19)));
         logger.debug(String.valueOf(uglyNumber.isUgly(9)));
     }
 
+    @Test
+    public void testPlusOne(){
+        PlusOne plusOne = new PlusOne();
+        int[] res = plusOne.plusOne(new int[] {9,9,9});
+        logger.debug(String.valueOf(res[0]));
+    }
 
 }
