@@ -1,5 +1,6 @@
 package com.easy;
 
+import com.easy.HappyNumber.HappyNumber;
 import com.easy.myatoi.MyAtoi;
 import com.easy.palindromenumber.PalindromeNumber;
 import com.easy.reverseinteger.ReverseInteger;
@@ -33,12 +34,20 @@ public class EasyTest {
         logger.debug(String.valueOf(reverseInteger.reverse(-1000000003)));
     }
 
-    @Test
+//    @Test
     public void testPalindrome(){
         PalindromeNumber palindromeNumber = new PalindromeNumber();
         logger.debug(String.valueOf(palindromeNumber.isPalindrome(-1001)));
         logger.debug(String.valueOf(palindromeNumber.isPalindrome(1001)));
         logger.debug(String.valueOf(palindromeNumber.isPalindrome(1024)));
         logger.debug(String.valueOf(palindromeNumber.isPalindrome(1024000003)));
+    }
+
+    @Test
+    public void testHappyNumber(){
+        HappyNumber happyNumber = new HappyNumber();
+        logger.debug(String.valueOf(happyNumber.isHappy(19)));
+        logger.debug(String.valueOf(happyNumber.isHappy(9)));
+        logger.debug(String.valueOf(happyNumber.isHappy(199)));
     }
 }

@@ -10,6 +10,7 @@ public class ReverseInteger {
 
         while (x != 0){
             int remainder = x % 10;
+            //判断是否溢出
             if ((x > 0 && ((Integer.MAX_VALUE - remainder) / 10) < rev) ||(x < 0 && ((Integer.MIN_VALUE - remainder) / 10 > rev))){
                 return 0;
             }

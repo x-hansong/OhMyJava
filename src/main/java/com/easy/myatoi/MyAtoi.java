@@ -22,6 +22,7 @@ public class MyAtoi {
                 max = Integer.MIN_VALUE;
             }
 
+            //跳过符号
             if (str.charAt(i) == '+' || str.charAt(i) == '-') {
                 i++;
             }
@@ -32,6 +33,7 @@ public class MyAtoi {
                     break;
                 }
 
+                //判断是否溢出
                 if (((max - (parseToInt(ch) * sign)) / 10) * sign >= result) {
                     result = result * 10 + parseToInt(ch);
                 } else {
