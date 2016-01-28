@@ -8,6 +8,8 @@ import com.easy.plusone.PlusOne;
 import com.easy.reverseinteger.ReverseInteger;
 import com.easy.titletonumber.TitleToNumber;
 import com.easy.uglynumber.UglyNumber;
+import com.easy.validparentheses.ValidParetheses;
+import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,11 +77,18 @@ public class EasyTest {
         logger.debug(String.valueOf(uglyNumber.isUgly(9)));
     }
 
-    @Test
+//    @Test
     public void testPlusOne(){
         PlusOne plusOne = new PlusOne();
         int[] res = plusOne.plusOne(new int[] {9,9,9});
         logger.debug(String.valueOf(res[0]));
     }
 
+    @Test
+    public void testValidParentheses(){
+        ValidParetheses validParetheses = new ValidParetheses();
+        Assert.assertTrue(validParetheses.isValid("()(){}[]"));
+        Assert.assertFalse(validParetheses.isValid(")((){}[]"));
+        Assert.assertFalse(validParetheses.isValid("({)}"));
+    }
 }
