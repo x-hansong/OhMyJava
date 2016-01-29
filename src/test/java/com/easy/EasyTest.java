@@ -1,14 +1,5 @@
 package com.easy;
 
-import com.easy.addbinary.AddBinary;
-import com.easy.happynumber.HappyNumber;
-import com.easy.myatoi.MyAtoi;
-import com.easy.palindromenumber.PalindromeNumber;
-import com.easy.plusone.PlusOne;
-import com.easy.reverseinteger.ReverseInteger;
-import com.easy.titletonumber.TitleToNumber;
-import com.easy.uglynumber.UglyNumber;
-import com.easy.validparentheses.ValidParetheses;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -84,11 +75,35 @@ public class EasyTest {
         logger.debug(String.valueOf(res[0]));
     }
 
-    @Test
+//    @Test
     public void testValidParentheses(){
         ValidParetheses validParetheses = new ValidParetheses();
         Assert.assertTrue(validParetheses.isValid("()(){}[]"));
         Assert.assertFalse(validParetheses.isValid(")((){}[]"));
         Assert.assertFalse(validParetheses.isValid("({)}"));
+    }
+
+//    @Test
+    public void testCompareVersion(){
+        CompareVersionNumber compareVersionNumber = new CompareVersionNumber();
+        Assert.assertTrue(compareVersionNumber.compareVersion("1.0", "1.0") == 0);
+        Assert.assertTrue(compareVersionNumber.compareVersion("1.0.1", "1.0") == 1);
+        Assert.assertTrue(compareVersionNumber.compareVersion("1.0.1", "2.0") == -1);
+    }
+
+//    @Test
+    public void testCountAndSay(){
+        CountAndSay countAndSay = new CountAndSay();
+        Assert.assertEquals(countAndSay.countAndSay(1), "1");
+        Assert.assertEquals(countAndSay.countAndSay(2), "11");
+        Assert.assertEquals(countAndSay.countAndSay(3), "21");
+        Assert.assertEquals(countAndSay.countAndSay(4), "1211");
+    }
+
+    @Test
+    public void testLengthOfLastWord(){
+        LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();
+        Assert.assertTrue(lengthOfLastWord.lengthOfLastWord("  hello world  ") == 5);
+        Assert.assertTrue(lengthOfLastWord.lengthOfLastWord("world") == 5);
     }
 }

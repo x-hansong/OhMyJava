@@ -1,4 +1,4 @@
-package com.easy.myatoi;
+package com.easy;
 
 /**
  * Created by xhans on 2016/1/25.

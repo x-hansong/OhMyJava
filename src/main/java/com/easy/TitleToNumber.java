@@ -1,4 +1,4 @@
-package com.easy.titletonumber;
+package com.easy;
 
 /**
  * Created by xhans on 2016/1/27.
