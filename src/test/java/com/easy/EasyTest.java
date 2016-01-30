@@ -100,10 +100,19 @@ public class EasyTest {
         Assert.assertEquals(countAndSay.countAndSay(4), "1211");
     }
 
-    @Test
+//    @Test
     public void testLengthOfLastWord(){
         LengthOfLastWord lengthOfLastWord = new LengthOfLastWord();
         Assert.assertTrue(lengthOfLastWord.lengthOfLastWord("  hello world  ") == 5);
         Assert.assertTrue(lengthOfLastWord.lengthOfLastWord("world") == 5);
+    }
+
+    @Test
+    public void testValidPalindrome(){
+        ValidPalindrome validPalindrome = new ValidPalindrome();
+        Assert.assertTrue(validPalindrome.isPalindrome(""));
+        Assert.assertTrue(validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
+        Assert.assertFalse(validPalindrome.isPalindrome("race a car"));
+        Assert.assertFalse(validPalindrome.isPalindrome("0P"));
     }
 }
