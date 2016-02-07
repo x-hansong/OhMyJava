@@ -5,6 +5,7 @@ import java.util.Arrays;
 /**
  * Created by xhans on 2016/2/7.
  */
+//排序后遍历
 public class ContainsDuplicate {
     public boolean containsDuplicate(int[] nums){
         Arrays.sort(nums);

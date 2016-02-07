@@ -107,12 +107,19 @@ public class EasyTest {
         Assert.assertTrue(lengthOfLastWord.lengthOfLastWord("world") == 5);
     }
 
-    @Test
+//    @Test
     public void testValidPalindrome(){
         ValidPalindrome validPalindrome = new ValidPalindrome();
         Assert.assertTrue(validPalindrome.isPalindrome(""));
         Assert.assertTrue(validPalindrome.isPalindrome("A man, a plan, a canal: Panama"));
         Assert.assertFalse(validPalindrome.isPalindrome("race a car"));
         Assert.assertFalse(validPalindrome.isPalindrome("0P"));
+    }
+
+    @Test
+    public void testMajorityElement(){
+        MajorityElement majorityElement = new MajorityElement();
+        Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,2,3,3,4,4}));
+        Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,3,2,4,4,3,3}));
     }
 }
