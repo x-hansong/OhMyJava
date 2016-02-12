@@ -116,12 +116,19 @@ public class EasyTest {
         Assert.assertFalse(validPalindrome.isPalindrome("0P"));
     }
 
-    @Test
+//    @Test
     public void testMajorityElement(){
 
-        int i = Integer.MAX_VALUE;
         MajorityElement majorityElement = new MajorityElement();
         Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,2,3,3,4,4}));
         Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,3,2,4,4,3,3}));
+    }
+
+    @Test
+    public void testMergeSortedLists(){
+        MergeSortedList mergeSortedList = new MergeSortedList();
+
+        mergeSortedList.mergeTwoLists1(mergeSortedList.new ListNode(1), mergeSortedList.new ListNode(1));
+
     }
 }
