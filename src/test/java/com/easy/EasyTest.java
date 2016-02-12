@@ -118,6 +118,8 @@ public class EasyTest {
 
     @Test
     public void testMajorityElement(){
+
+        int i = Integer.MAX_VALUE;
         MajorityElement majorityElement = new MajorityElement();
         Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,2,3,3,4,4}));
         Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,3,2,4,4,3,3}));
