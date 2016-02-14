@@ -1,14 +1,12 @@
 package com.easy;
 
+import com.datastructure.ListNode;
+
 /**
  * Created by xhans on 2016/2/11.
  */
 public class ReverseList {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
+
 
     public ListNode reverseList(ListNode head){
         if (head == null || head.next == null){

@@ -1,5 +1,7 @@
 package com.easy;
 
+import com.datastructure.TreeNode;
+
 /**
  * Created by xhans on 2016/2/4.
  */
@@ -15,14 +17,4 @@ public class InvertBinaryTree {
         }
     }
 
-
-    class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
-        }
-    }
 }

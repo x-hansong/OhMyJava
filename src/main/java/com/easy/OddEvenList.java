@@ -1,14 +1,12 @@
 package com.easy;
 
+import com.datastructure.ListNode;
+
 /**
  * Created by xhans on 2016/2/12.
  */
 public class OddEvenList {
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
-    }
+
     public ListNode oddEvenList(ListNode  head){
         if(head == null || head.next == null){
             return head;

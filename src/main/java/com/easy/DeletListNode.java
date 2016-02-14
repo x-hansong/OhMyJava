@@ -1,5 +1,7 @@
 package com.easy;
 
+import com.datastructure.ListNode;
+
 /**
  * Created by xhans on 2016/2/4.
  */
@@ -11,9 +13,4 @@ public class DeletListNode {
         node.next = next2Node;
     }
 
-     public class ListNode {
-             int val;
-             ListNode next;
-             ListNode(int x) { val = x; }
-         }
 }
