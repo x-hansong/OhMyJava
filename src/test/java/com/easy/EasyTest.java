@@ -124,11 +124,17 @@ public class EasyTest {
         Assert.assertEquals(3,majorityElement.majorityElement(new int[] {3,3,2,3,2,4,4,3,3}));
     }
 
-    @Test
+//    @Test
     public void testMergeSortedLists(){
         MergeSortedList mergeSortedList = new MergeSortedList();
 
-        mergeSortedList.mergeTwoLists1(mergeSortedList.new ListNode(1), mergeSortedList.new ListNode(1));
 
+    }
+
+    @Test
+    public void testRectangleArea(){
+        RectangleArea rectangleArea = new RectangleArea();
+
+        Assert.assertEquals(16, rectangleArea.computeArea(-2, -2, 2, 2, -2, -2, 2, 2));
     }
 }
