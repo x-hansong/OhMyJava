@@ -145,10 +145,20 @@ public class EasyTest {
         Assert.assertTrue(c.containsNearbyDuplicate(new int[] {1, 0, 1, 1}, 1));
     }
 
-    @Test
+//    @Test
     public void testBullsAndCows(){
         BullsAndCows bullsAndCows = new BullsAndCows();
 
         bullsAndCows.getHint("1122", "1222");
+    }
+
+    @Test
+    public void testIsomorphicString(){
+        IsomorphicString isomorphicString = new IsomorphicString();
+
+        Assert.assertTrue(isomorphicString.isIsomorphic("a", "a"));
+        Assert.assertTrue(isomorphicString.isIsomorphic("add", "egg"));
+        Assert.assertTrue(isomorphicString.isIsomorphic("paper", "title"));
+        Assert.assertFalse(isomorphicString.isIsomorphic("apple", "title"));
     }
 }
