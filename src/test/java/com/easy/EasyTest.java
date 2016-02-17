@@ -131,10 +131,17 @@ public class EasyTest {
 
     }
 
-    @Test
+//    @Test
     public void testRectangleArea(){
         RectangleArea rectangleArea = new RectangleArea();
 
         Assert.assertEquals(16, rectangleArea.computeArea(-2, -2, 2, 2, -2, -2, 2, 2));
+    }
+
+    @Test
+    public void testContainsDuplicate2(){
+        ContainsDuplicate2 c = new ContainsDuplicate2();
+
+        Assert.assertTrue(c.containsNearbyDuplicate(new int[] {1, 0, 1, 1}, 1));
     }
 }
