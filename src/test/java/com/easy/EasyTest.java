@@ -152,7 +152,7 @@ public class EasyTest {
         bullsAndCows.getHint("1122", "1222");
     }
 
-    @Test
+//    @Test
     public void testIsomorphicString(){
         IsomorphicString isomorphicString = new IsomorphicString();
 
@@ -160,5 +160,15 @@ public class EasyTest {
         Assert.assertTrue(isomorphicString.isIsomorphic("add", "egg"));
         Assert.assertTrue(isomorphicString.isIsomorphic("paper", "title"));
         Assert.assertFalse(isomorphicString.isIsomorphic("apple", "title"));
+    }
+
+    @Test
+    public void testMyStrStr(){
+        MyStrStr myStrStr = new MyStrStr();
+
+        Assert.assertTrue(myStrStr.KMP2("a","a") == 0);
+        Assert.assertTrue(myStrStr.KMP2("abcfdfabcabx","abcabx") == 6);
+//        Assert.assertTrue(myStrStr.strStr("","") == -1);
+        Assert.assertTrue(myStrStr.KMP("abbabaaaabbbaabaabaabbbaaabaaaaaabbbabbaabbabaabbabaaaaababbabbaaaaabbbbaaabbaaabbbbabbbbaaabbaaaaababbaababbabaaabaabbbbbbbaabaabaabbbbababbbababbaaababbbabaabbaaabbbba","bbbbbbaa") == 118);
     }
 }
