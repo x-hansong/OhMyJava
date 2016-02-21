@@ -162,7 +162,7 @@ public class EasyTest {
         Assert.assertFalse(isomorphicString.isIsomorphic("apple", "title"));
     }
 
-    @Test
+//    @Test
     public void testMyStrStr(){
         MyStrStr myStrStr = new MyStrStr();
 
@@ -170,5 +170,14 @@ public class EasyTest {
         Assert.assertTrue(myStrStr.KMP2("abcfdfabcabx","abcabx") == 6);
 //        Assert.assertTrue(myStrStr.strStr("","") == -1);
         Assert.assertTrue(myStrStr.KMP("abbabaaaabbbaabaabaabbbaaabaaaaaabbbabbaabbabaabbabaaaaababbabbaaaaabbbbaaabbaaabbbbabbbbaaabbaaaaababbaababbabaaabaabbbbbbbaabaabaabbbbababbbababbaaababbbabaabbaaabbbba","bbbbbbaa") == 118);
+    }
+
+    @Test
+    public void testSummaryRange(){
+        SummaryRange summaryRange = new SummaryRange();
+
+        logger.debug(summaryRange.summaryRanges(new int[] {0,2,4,6,8}).toString());
+        logger.debug(summaryRange.summaryRanges(new int[] {0,1,2,4,5,7}).toString());
+        logger.debug(summaryRange.summaryRanges(new int[] {0,1,2,4,5,7,8}).toString());
     }
 }
