@@ -172,12 +172,21 @@ public class EasyTest {
         Assert.assertTrue(myStrStr.KMP("abbabaaaabbbaabaabaabbbaaabaaaaaabbbabbaabbabaabbabaaaaababbabbaaaaabbbbaaabbaaabbbbabbbbaaabbaaaaababbaababbabaaabaabbbbbbbaabaabaabbbbababbbababbaaababbbabaabbaaabbbba","bbbbbbaa") == 118);
     }
 
-    @Test
+//    @Test
     public void testSummaryRange(){
         SummaryRange summaryRange = new SummaryRange();
 
         logger.debug(summaryRange.summaryRanges(new int[] {0,2,4,6,8}).toString());
         logger.debug(summaryRange.summaryRanges(new int[] {0,1,2,4,5,7}).toString());
         logger.debug(summaryRange.summaryRanges(new int[] {0,1,2,4,5,7,8}).toString());
+    }
+
+    @Test
+    public void testColumnTitle(){
+        ColumnTitle columnTitle = new ColumnTitle();
+
+        logger.debug(columnTitle.convertToTitle(1));
+        logger.debug(columnTitle.convertToTitle(26));
+        logger.debug(columnTitle.convertToTitle(28));
     }
 }
