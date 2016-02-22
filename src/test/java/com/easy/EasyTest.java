@@ -181,12 +181,23 @@ public class EasyTest {
         logger.debug(summaryRange.summaryRanges(new int[] {0,1,2,4,5,7,8}).toString());
     }
 
-    @Test
+//    @Test
     public void testColumnTitle(){
         ColumnTitle columnTitle = new ColumnTitle();
 
         logger.debug(columnTitle.convertToTitle(1));
         logger.debug(columnTitle.convertToTitle(26));
         logger.debug(columnTitle.convertToTitle(28));
+    }
+
+    @Test
+    public void testRotateArray(){
+        RotateArray rotateArray = new RotateArray();
+
+//        rotateArray.rotate(new int[]{1}, 0);
+//        rotateArray.rotate(new int[]{1,2}, 1);
+//        rotateArray.rotate(new int[]{1,2,3,4,5,6,7}, 3);
+        rotateArray.rotate1(new int[]{1,2,3,4,5,6}, 2);
+//        rotateArray.rotate(new int[]{1,2,3,4,5,6,7,8}, 4);
     }
 }
