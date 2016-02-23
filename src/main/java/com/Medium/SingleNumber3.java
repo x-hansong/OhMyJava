@@ -1,4 +1,4 @@
-package com.Medium;
+package com.medium;
 
 /**
  * Created by xhans on 2016/2/22.

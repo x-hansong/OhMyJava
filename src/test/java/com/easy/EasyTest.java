@@ -1,6 +1,6 @@
 package com.easy;
 
-import com.Medium.BuySellStock2;
+import com.hard.BuySellStock3;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -11,7 +11,7 @@ import org.slf4j.LoggerFactory;
  */
 public class EasyTest {
 
-    private static Logger logger = LoggerFactory.getLogger(MyAtoi.class);
+    private static Logger logger = LoggerFactory.getLogger(EasyTest.class);
 //    @Test
     public void testMyAtoi(){
         MyAtoi myAtoi = new MyAtoi();
@@ -204,7 +204,7 @@ public class EasyTest {
 
     @Test
     public void testBuySellStock2(){
-        BuySellStock2 buySellStock2 = new BuySellStock2();
+        BuySellStock3 buySellStock2 = new BuySellStock3();
 
         logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{1,2})));
         logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1})));
@@ -214,5 +214,6 @@ public class EasyTest {
         logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1,2,0,1})));
         logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1,2,0,0,1})));
         logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{8,6,4,3,3,2,3,5,8,3,8,2,6})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{1,2,4,2,5,7,2,4,9,0})));
     }
 }

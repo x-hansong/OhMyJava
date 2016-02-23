@@ -1,4 +1,4 @@
-package com.Medium;
+package com.medium;
 
 import java.util.HashMap;
 import java.util.HashSet;
