@@ -1,5 +1,6 @@
 package com.easy;
 
+import com.Medium.BuySellStock2;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -190,7 +191,7 @@ public class EasyTest {
         logger.debug(columnTitle.convertToTitle(28));
     }
 
-    @Test
+//    @Test
     public void testRotateArray(){
         RotateArray rotateArray = new RotateArray();
 
@@ -199,5 +200,19 @@ public class EasyTest {
 //        rotateArray.rotate(new int[]{1,2,3,4,5,6,7}, 3);
         rotateArray.rotate1(new int[]{1,2,3,4,5,6}, 2);
 //        rotateArray.rotate(new int[]{1,2,3,4,5,6,7,8}, 4);
+    }
+
+    @Test
+    public void testBuySellStock2(){
+        BuySellStock2 buySellStock2 = new BuySellStock2();
+
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{1,2})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{1,4,2})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1,4})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{4,2,1})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1,2,0,1})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{2,1,2,0,0,1})));
+        logger.debug(String.valueOf(buySellStock2.maxProfit(new int[]{8,6,4,3,3,2,3,5,8,3,8,2,6})));
     }
 }
