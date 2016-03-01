@@ -32,7 +32,7 @@ public class TestData {
 
     }
 
-    @Test
+//    @Test
     public void testMyLinkedList(){
         MyLinkedList<Integer> myLinkedList = new MyLinkedList<Integer>();
 
@@ -47,5 +47,17 @@ public class TestData {
             logger.debug(String.valueOf(myLinkedList.get(i)));
         }
 
+    }
+    @Test
+    public void testBinaryHeap(){
+        int numItems = 10000;
+        BinaryHeap<Integer> h = new BinaryHeap<Integer>( );
+        int i = 37;
+
+        for( i = 37; i != 0; i = ( i + 37 ) % numItems )
+            h.insert( i );
+        for( i = 1; i < numItems; i++ )
+            if( h.deleteMin( ) != i )
+                logger.debug( "Oops! " + i );
     }
 }
