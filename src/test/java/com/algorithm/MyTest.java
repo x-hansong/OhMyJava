@@ -36,7 +36,7 @@ public class MyTest {
         logger.debug(String.valueOf(binarySearch.binarySearch(new Integer[]{1,1,3,4,4,4,4}, 4)));
     }
 
-    @Test
+//    @Test
     public void testMergeSort(){
         MergeSort<Integer> mergeSort = new MergeSort<Integer>();
 
@@ -45,4 +45,11 @@ public class MyTest {
         mergeSort.mergeSort(new Integer[]{3,5,3,1,1,0});
     }
 
+    @Test
+    public void testPermutation(){
+        Permutation permutation = new Permutation();
+
+        permutation.permutation(new char[] {'a','b','c'});
+        permutation.permutation(new char[] {'a','b','b'});
+    }
 }
