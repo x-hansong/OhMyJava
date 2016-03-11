@@ -45,11 +45,22 @@ public class MyTest {
         mergeSort.mergeSort(new Integer[]{3,5,3,1,1,0});
     }
 
-    @Test
+//    @Test
     public void testPermutation(){
         Permutation permutation = new Permutation();
 
         permutation.permutation(new char[] {'a','b','c'});
         permutation.permutation(new char[] {'a','b','b'});
+    }
+
+    @Test
+    public void testQueen(){
+        Queen queen = new Queen();
+
+        logger.debug(String.valueOf(queen.queens(new int[1], 0)));
+        logger.debug(String.valueOf(queen.queens(new int[2], 0)));
+        logger.debug(String.valueOf(queen.queens(new int[3], 0)));
+        logger.debug(String.valueOf(queen.queens(new int[4], 0)));
+        logger.debug(String.valueOf(queen.queens(new int[8], 0)));
     }
 }
