@@ -1,9 +1,9 @@
-package com.java;
+package com.java.concurrency;
 
 /**
  * Created by xhans on 2016/3/6.
  */
-public class ConcurrentControl {
+public class SynchronizedTest {
 
     public static void main(String[] args){
         MyThread1 mt = new MyThread1();

@@ -7,7 +7,7 @@ import java.lang.reflect.Method;
 /**
  * Created by xhans on 2016/3/10.
  */
-public class Reflection {
+public class ReflectionTest {
     static class MyClass {
         public int count;
         public MyClass(int start) {

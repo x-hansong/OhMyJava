@@ -24,6 +24,9 @@ public class UseCaseTracker {
     }
     
     public static void main(String[] args){
+        String s = null;
+        s = s + "!";
+        System.out.print(s);
         List<Integer> useCases = new ArrayList<>();
         Collections.addAll(useCases, 47, 48, 49, 50);
         trackUseCases(useCases, PasswordUtils.class);
