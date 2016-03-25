@@ -40,6 +40,8 @@ public class MultiPortEcho {
         while (true){
             int num = selector.select();
 
+            System.out.println("get " + num + " events");
+
             Set selectedKeys = selector.selectedKeys();
             Iterator it = selectedKeys.iterator();
 
@@ -61,20 +63,21 @@ public class MultiPortEcho {
                         echoBuffer.clear();
                         int r = sc.read(echoBuffer);
 
+                        //当前没有可读的数据
                         if (r == 0){
                             break;
                         }
+                        //对端的socket已经关闭
                         if (r == -1){
                             sc.close();
                             break;
                         }
-
                         echoBuffer.flip();
                         sc.write(echoBuffer);
                         bytesEchoed += r;
                     }
 
-                    System.out.println("Echoed " + bytesEchoed + "from " + sc);
+                    System.out.println("Echoed " + bytesEchoed + " from " + sc);
                     it.remove();
                 }
 
