@@ -1,5 +1,7 @@
 package com.algorithm;
 
+import com.algorithm.math.Divisor;
+import com.algorithm.math.PrimeNumber;
 import com.algorithm.searching.BinarySearch;
 import com.algorithm.sorting.MergeSort;
 import com.algorithm.sorting.QuickSort;
@@ -53,7 +55,7 @@ public class MyTest {
         permutation.permutation(new char[] {'a','b','b'});
     }
 
-    @Test
+//    @Test
     public void testQueen(){
         Queen queen = new Queen();
 
@@ -62,5 +64,31 @@ public class MyTest {
         logger.debug(String.valueOf(queen.queens(new int[3], 0)));
         logger.debug(String.valueOf(queen.queens(new int[4], 0)));
         logger.debug(String.valueOf(queen.queens(new int[8], 0)));
+    }
+
+//    @Test
+    public void testPrime(){
+        PrimeNumber primeNumber = new PrimeNumber();
+
+        logger.debug(String.valueOf(primeNumber.primeNumbers(1)));
+        logger.debug(String.valueOf(primeNumber.primeNumbers(2)));
+        logger.debug(String.valueOf(primeNumber.primeNumbers(4)));
+        logger.debug(String.valueOf(primeNumber.primeNumbers(10)));
+        logger.debug(String.valueOf(primeNumber.primeNumbers(100)));
+    }
+
+//    @Test
+    public void testPrimeDivisors(){
+        logger.debug(String.valueOf(Divisor.primeDivisorAndCounts(10)));
+        logger.debug(String.valueOf(Divisor.primeDivisorAndCounts(100)));
+        logger.debug(String.valueOf(Divisor.primeDivisorAndCounts(1000)));
+        logger.debug(String.valueOf(Divisor.primeDivisorAndCounts(1223000)));
+    }
+
+    @Test
+    public void testDivisors(){
+        logger.debug(String.valueOf(Divisor.divisors(10)));
+        logger.debug(String.valueOf(Divisor.divisors(100)));
+        logger.debug(String.valueOf(Divisor.divisors(1000)));
     }
 }
