@@ -87,6 +87,12 @@ public class MyTest {
 
     @Test
     public void testDivisors(){
+        int i=100;
+        String binStr=Integer.toBinaryString(i);
+        String otcStr=Integer.toOctalString(i);
+        String hexStr=Integer.toHexString(i);
+        System.out.println(binStr);
+
         logger.debug(String.valueOf(Divisor.divisors(10)));
         logger.debug(String.valueOf(Divisor.divisors(100)));
         logger.debug(String.valueOf(Divisor.divisors(1000)));
