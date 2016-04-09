@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Created by xhans on 2016/4/4.
  */
-public class hiho1284 {
+public class Hiho1284 {
     static List<Integer> primes = primeNumbers(1000000);
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);

@@ -5,6 +5,7 @@ import com.algorithm.math.PrimeNumber;
 import com.algorithm.searching.BinarySearch;
 import com.algorithm.sorting.MergeSort;
 import com.algorithm.sorting.QuickSort;
+import com.contest.Forbidden;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -85,7 +86,7 @@ public class MyTest {
         logger.debug(String.valueOf(Divisor.primeDivisorAndCounts(1223000)));
     }
 
-    @Test
+//    @Test
     public void testDivisors(){
         int i=100;
         String binStr=Integer.toBinaryString(i);
@@ -96,5 +97,20 @@ public class MyTest {
         logger.debug(String.valueOf(Divisor.divisors(10)));
         logger.debug(String.valueOf(Divisor.divisors(100)));
         logger.debug(String.valueOf(Divisor.divisors(1000)));
+    }
+
+    @Test
+    public void testHiho1014(){
+//        Hiho1014.Trie trie = new Hiho1014.Trie();
+//        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+//            trie.insert(RandomStringUtils.randomAlphabetic(26).toLowerCase());
+//        }
+//        for (int i = 0; i < Integer.MAX_VALUE; i++) {
+//            System.out.println(trie.getPrefixNum(RandomStringUtils.randomAlphabetic(26).toLowerCase()));
+//        }
+        logger.debug(String.valueOf(0xffffffff >>> 31));
+        logger.debug(String.valueOf(Integer.MAX_VALUE >> 31));
+        logger.debug(Integer.toBinaryString(Forbidden.toInt("1.1.1.1")));
+        logger.debug(Integer.toBinaryString(Forbidden.toInt("255.255.255.255")).length() + "");
     }
 }

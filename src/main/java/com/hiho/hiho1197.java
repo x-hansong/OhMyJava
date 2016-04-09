@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Created by xhans on 2016/4/5.
  */
-public class hiho1197 {
+public class Hiho1197 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         while (scanner.hasNext()){
