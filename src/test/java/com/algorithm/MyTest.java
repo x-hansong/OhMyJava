@@ -6,7 +6,7 @@ import com.algorithm.searching.BinarySearch;
 import com.algorithm.sorting.MergeSort;
 import com.algorithm.sorting.QuickSort;
 import com.contest.Forbidden;
-import org.junit.Test;
+import com.contest.Transform;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -99,7 +99,7 @@ public class MyTest {
         logger.debug(String.valueOf(Divisor.divisors(1000)));
     }
 
-    @Test
+//    @Test
     public void testHiho1014(){
 //        Hiho1014.Trie trie = new Hiho1014.Trie();
 //        for (int i = 0; i < Integer.MAX_VALUE; i++) {
@@ -112,5 +112,44 @@ public class MyTest {
         logger.debug(String.valueOf(Integer.MAX_VALUE >> 31));
         logger.debug(Integer.toBinaryString(Forbidden.toInt("1.1.1.1")));
         logger.debug(Integer.toBinaryString(Forbidden.toInt("255.255.255.255")).length() + "");
+    }
+
+//    @Test
+    public void testGrayCode(){
+//        for (char[] chars : GrayCode.grayIter(5)){
+//            for (char ch : chars){
+//                System.out.print(ch);
+//            }
+//            System.out.println();
+//        }
+        for (String code : GrayCode.grayRecur(4)) {
+            System.out.println(code);
+        }
+    }
+
+//    @Test
+    public void testTransform(){
+        logger.debug(Transform.trans("This is a sample", 16));
+        logger.debug(Transform.trans("This", 4));
+    }
+
+//    @Test
+    public void testLongestPaht(){
+//        LongestPath.TreeNode root = new LongestPath.TreeNode(1);
+//        root.left = new LongestPath.TreeNode(1);
+//        root.right = new LongestPath.TreeNode(1);
+//        root.right.left = new LongestPath.TreeNode(1);
+//        root.right.right = new LongestPath.TreeNode(1);
+//        root.left.right = new LongestPath.TreeNode(1);
+//        root.left.left = new LongestPath.TreeNode(1);
+//        root.left = new LongestPath.TreeNode(0);
+//        root.right = new LongestPath.TreeNode(1);
+//        root.left.left = new LongestPath.TreeNode(1);
+//        root.right.right = new LongestPath.TreeNode(1);
+//        root.right.left = new LongestPath.TreeNode(0);
+//        root.right.left.left = new LongestPath.TreeNode(0);
+//        root.right.left.left.left = new LongestPath.TreeNode(0);
+//        root.right.left.left.left.left = new LongestPath.TreeNode(0);
+//        logger.debug(String.valueOf(LongestPath.findPath(root)));
     }
 }
