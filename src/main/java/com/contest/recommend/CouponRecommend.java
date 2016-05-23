@@ -1,7 +1,6 @@
 package com.contest.recommend;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -22,7 +21,7 @@ public class CouponRecommend {
     }
 
     private void sortCoupon(){
-        Collections.sort(coupons, (o1, o2) -> DoubleUtils.compare(o1.getThreshold(), o2.getThreshold()));
+//        Collections.sort(coupons, (o1, o2) -> DoubleUtils.compare(o1.getThreshold(), o2.getThreshold()));
     }
 
     public Coupon getCoupon(Order order){
