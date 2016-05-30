@@ -39,6 +39,7 @@ gradle/
 out/
 gen/
 build/
+TuscanyExample/target
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
