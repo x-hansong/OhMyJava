@@ -16,8 +16,6 @@ import java.io.OutputStream;
  */
 public class Executor implements Watcher, Runnable, DataMonitor.DataMonitorListener{
 
-    String znode;
-
     DataMonitor dm;
 
     ZooKeeper zk;
