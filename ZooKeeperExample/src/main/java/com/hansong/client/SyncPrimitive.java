@@ -163,8 +163,7 @@ public class SyncPrimitive implements Watcher {
                     System.out.println("Temporary value: " + key);
                     byte[] b = zk.getData(path, false, null);
                     zk.delete(path, -1);
-                    ByteBuffer buffer = ByteBuffer.wrap(b);
-                    return buffer.getInt();
+                    return Integer.parseInt(new String(b));
                 }
             }
         }
