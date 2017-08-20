@@ -1,5 +1,7 @@
-import mapper.UserMapper;
-import model.User;
+package com.hansong;
+
+import com.hansong.mapper.UserMapper;
+import com.hansong.model.User;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;

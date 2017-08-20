@@ -1,4 +1,4 @@
-package model;
+package com.hansong.model;
 
 /**
  * Created by xhans on 2016/5/30 0030.

@@ -37,6 +37,6 @@ public interface Hello {
     @Action(input = "http://webservice.java.com/Hello/helloRequest", output = "http://webservice.java.com/Hello/helloResponse")
     public String hello(
             @WebParam(name = "arg0", targetNamespace = "")
-            String arg0);
+                    String arg0);
 
 }
