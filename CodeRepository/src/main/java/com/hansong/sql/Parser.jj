@@ -1,0 +1,53 @@
+options {
+    STATIC = false;
+    OUTPUT_DIRECTORY = "/Users/hansong/IdeaProjects/OhMyJava/CodeRepository/src/main/java/com/hansong/sql/cc";
+}
+
+PARSER_BEGIN(Adder)
+package com.hansong.sql.cc;
+ import java.io.FileInputStream;
+  import java.io.FileNotFoundException;
+
+ class Adder {
+        public static void main(String[] args) throws ParseException, TokenMgrError, FileNotFoundException {
+            Adder parser = new Adder(new FileInputStream("/Users/hansong/IdeaProjects/OhMyJava/CodeRepository/src/main/resources/input.txt"));
+            int val = parser.Start();
+            System.out.println(val);
+        }
+}
+PARSER_END(Adder)
+
+SKIP : {
+" "
+}
+
+SKIP : {
+"\n" | "\r" | "\r\n"
+}
+
+TOKEN : {
+< PLUS : "+" >
+}
+
+TOKEN : {
+< NUMBER : (["0"-"9"])+ >
+}
+
+int Start() : {
+ Token t;
+ int i;
+ int value;
+ }
+{
+ t = <NUMBER>
+ {i = Integer.parseInt(t.image);}
+ {value = i;}
+(
+<PLUS>
+t = <NUMBER>
+{i = Integer.parseInt(t.image);}
+{value += i;}
+)*
+<EOF>
+{return value;}
+}
